@@ -37,6 +37,8 @@
 	        $this->load->model('setting/store');
 
 	        $store_info = $this->model_setting_store->getStore($store_id);
+                
+                $test = 22;
 
 	        $admin_mail = $this->config->get('config_email');
 
