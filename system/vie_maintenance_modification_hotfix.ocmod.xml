@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<modification>
+  <name>Viethemes - Maintenance Modification Hotfix</name>
+  <code>vie_maintenance_modification_hotfix</code>
+  <version>1.0</version>
+  <author>Viethemes</author>
+  <link>http://www.viethemes.com</link>
+
+  <file path="admin/controller/extension/modification.php">
+    <operation>
+      <search><![CDATA[$this->model_setting_setting->editSettingValue('config', 'config_maintenance', true);]]></search>
+      <add position="after"><![CDATA[$this->config->set('config_maintenance', true);]]></add>
+    </operation>
+  </file>  
+
+</modification>
