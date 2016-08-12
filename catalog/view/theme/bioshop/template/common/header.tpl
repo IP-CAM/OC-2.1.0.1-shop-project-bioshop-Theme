@@ -132,5 +132,7 @@
 				</nav>
                             </div>
 			</div>
-		</header>
-                <?php } ?>
+                       <?php } ?> 
+                      </header>
+                      <div class="container break-stripe"></div>
+                
