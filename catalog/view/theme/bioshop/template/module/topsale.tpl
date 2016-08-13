@@ -1,4 +1,6 @@
-				<div class="buy-item">
+				   <?php $size = count($products); ?>
+                                   <?php if ($size > 0) { ?>
+                                    <div class="buy-item">
 					<p class="buy-header">Больше всего покупают:</p>
 					<div class="slider-wrapper">
 						<div id="carousel-example-generic1" class="carousel slide" data-ride="carousel">
@@ -7,7 +9,6 @@
 									<div class="wrapper-item">
                                                                         <?php  
                                                                              $rows = 1;
-                                                                             $size = count($products);
                                                                              $active_item = ($size >= 3)? 3 : $size;
                                                                          ?>                   
                                                                          <?php for ($m = 1; $m <= $active_item; $m++) { ?>
@@ -89,8 +90,8 @@
 					        <a class="right carousel-control" href="#carousel-example-generic1" role="button" data-slide="next">
 								<img src="catalog/view/theme/bioshop/image/arrow-right.png" alt="right">
 					       </a>    
-					</div>
-				</div>
-                           </div>
-             
-
+					  </div>
+				     </div>
+                                </div>
+                            <?php } ?>
+ 
