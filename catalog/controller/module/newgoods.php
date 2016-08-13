@@ -1,7 +1,7 @@
 <?php
-class ControllerModuleTopsale extends Controller {
+class ControllerModuleNewgoods extends Controller {
 	public function index($setting) {
-		$this->load->language('module/topsale');
+		$this->load->language('module/newgoods');
 		
 		$data['heading_title'] = $this->language->get('heading_title');
 		
@@ -80,10 +80,10 @@ class ControllerModuleTopsale extends Controller {
 		}
                 
   
-			if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/module/topsale.tpl')) {
-				return $this->load->view($this->config->get('config_template') . '/template/module/topsale.tpl', $data);
+			if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/module/newgoods.tpl')) {
+				return $this->load->view($this->config->get('config_template') . '/template/module/newgoods.tpl', $data);
 			} else {
-			return $this->load->view('default/template/module/topsale.tpl', $data);
+			return $this->load->view('default/template/module/newgoods.tpl', $data);
 		   }
 	    }
 	}

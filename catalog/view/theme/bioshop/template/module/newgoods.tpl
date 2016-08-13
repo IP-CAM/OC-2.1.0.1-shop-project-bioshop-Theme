@@ -1,7 +1,7 @@
 				   <?php $size = count($products); ?>
                                    <?php if ($size > 0) { ?>
                                     <div class="buy-item">
-					<p class="buy-header">Больше всего покупают:</p>
+					<p class="buy-header">Новые товары:</p>
 					<div class="slider-wrapper">
 						<div id="carousel-example-generic1" class="carousel slide" data-ride="carousel">
 							<div class="carousel-inner" role="listbox">
