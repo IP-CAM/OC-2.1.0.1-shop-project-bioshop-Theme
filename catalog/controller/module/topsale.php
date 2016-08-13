@@ -79,50 +79,7 @@ class ControllerModuleTopsale extends Controller {
                         $count++;
 		}
                 
-                $n = 1;
-                $size = 11; //count($data['products']);
-                $active_item = ($size >= 3)? 3 : $size; 
-                
-                for ($m = 1; $m <= $active_item; $m++) {
-                    
-                    $n++;
-                }
-                
-                $number_row = intval(ceil(($size - 3)/3));
-               
-                
-                if ($number_row > 0) {
-                    
-                    for($rows = 4; $rows <= $size; $rows) {
-                        
-                        $item = $rows;
-                       
-                        for ($k = $item; $k <= $item + 3; $k++) {
-                            
-                          
-                           
-                            if ($rows >= $size) {
-                            
-                                 break;
-                            } 
-                            
-                            $rows++;
-                            
-                        }
-                        
-                        if ($rows >= $size) {
-                            
-                            break;
-                        }
-                        
-                        
-                    }
-                    
-                    
-                }
-                
-                
-
+  
 			if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/module/topsale.tpl')) {
 				return $this->load->view($this->config->get('config_template') . '/template/module/topsale.tpl', $data);
 			} else {
