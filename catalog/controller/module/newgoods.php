@@ -18,7 +18,7 @@ class ControllerModuleNewgoods extends Controller {
 		
 		$this->load->model('tool/image');
                 
-                $data['newgoods'] = 'newgoods' . $module += 1;
+                $data['newgoods'] = 'newgoods' . $module++;
 		
 		$data['products'] = array();		
 
