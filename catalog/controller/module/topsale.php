@@ -1,6 +1,9 @@
 <?php
 class ControllerModuleTopsale extends Controller {
 	public function index($setting) {
+            
+                static $module = 0;
+                
 		$this->load->language('module/topsale');
 		
 		$data['heading_title'] = $this->language->get('heading_title');
@@ -14,6 +17,8 @@ class ControllerModuleTopsale extends Controller {
 		$this->load->model('catalog/product');
 		
 		$this->load->model('tool/image');
+                
+                $data['topsale'] = 'topsale' . $module++;
 		
 		$data['products'] = array();		
 
