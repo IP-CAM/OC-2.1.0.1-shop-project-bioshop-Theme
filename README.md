@@ -1,2 +1,2 @@
 # shop-project
-Shop on the OpenCart
+Shop on the OpenCart2
