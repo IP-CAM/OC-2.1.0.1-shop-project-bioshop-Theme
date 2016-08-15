@@ -1,9 +1,9 @@
 				   <?php $size = count($products); ?>
                                    <?php if ($size > 0) { ?>
                                     <div class="buy-item">
-					<p class="buy-header">Больше всего покупают:</p>
+					<p class="buy-header">Новые товары:</p>
 					<div class="slider-wrapper">
-						<div id="carousel-example-generic-<?php echo $topsale; ?>" class="carousel slide" data-ride="carousel">
+						<div id="carousel-example-generic-<?php echo $newgoods; ?>" class="carousel slide" data-ride="carousel">
 							<div class="carousel-inner" role="listbox">
 								<div class="item active">
 									<div class="wrapper-item">
@@ -84,10 +84,10 @@
 			                                                  <?php } ?>
                                                                  <?php } ?>
 						</div>
-                                                <a class="left carousel-control" href="#carousel-example-generic-<?php echo $topsale; ?>" role="button" data-slide="prev">
+                                                <a class="left carousel-control" href="#carousel-example-generic-<?php echo $newgoods; ?>" role="button" data-slide="prev">
 								<img src="catalog/view/theme/bioshop/image/arrow-left.png" alt="left">
 					        </a>
-					        <a class="right carousel-control" href="#carousel-example-generic-<?php echo $topsale; ?>" role="button" data-slide="next">
+					        <a class="right carousel-control" href="#carousel-example-generic-<?php echo $newgoods; ?>" role="button" data-slide="next">
 								<img src="catalog/view/theme/bioshop/image/arrow-right.png" alt="right">
 					       </a>    
 					  </div>
