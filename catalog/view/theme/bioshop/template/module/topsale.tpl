@@ -51,7 +51,7 @@
                                                                 <div class="item">
 									<div class="wrapper-item">
                                                                         <?php for($rows = 4; $rows <= $size; $rows) { ?>
-								        <?div $item = $rows; ?>
+								        <?php $item = $rows; ?>      
                                                                             <?php  for ($k = $item; $k <= $item + 3; $k++) { ?> 
                                                                             
                                                                                 <?php  if ($rows >= $size) { ?>
