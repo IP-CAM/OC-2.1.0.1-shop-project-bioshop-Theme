@@ -1,10 +1,10 @@
 <?php
-class ControllerModuleTopsale extends Controller {
+class ControllerModuleNewgoods extends Controller {
 	public function index($setting) {
             
                 static $module = 0;
                 
-		$this->load->language('module/topsale');
+		$this->load->language('module/newgoods');
 		
 		$data['heading_title'] = $this->language->get('heading_title');
 		
@@ -18,13 +18,13 @@ class ControllerModuleTopsale extends Controller {
 		
 		$this->load->model('tool/image');
                 
-                $data['topsale'] = 'topsale' . $module++;
+                $data['newgoods'] = 'newgoods' . $module++;
 		
 		$data['products'] = array();		
 
 		$product_data = array();
 		
-		$query = $this->db->query("SELECT o.order_id,op.product_id,SUM(op.quantity) AS total FROM " . DB_PREFIX . "order o LEFT JOIN " . DB_PREFIX . "order_product op ON (o.order_id = op.order_id) WHERE o.order_status_id = 1 OR o.order_status_id = 5 GROUP BY op.product_id ORDER BY total DESC LIMIT " . (int)$setting['limit']);
+		$query = $this->db->query("SELECT product_id FROM " . DB_PREFIX . "product WHERE status = 1 AND quantity >= 1 ORDER BY date_added ASC LIMIT " . (int)$setting['limit']);
 		
 		
 		foreach ($query->rows as $result) { 		
@@ -85,10 +85,10 @@ class ControllerModuleTopsale extends Controller {
 		}
                 
   
-			if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/module/topsale.tpl')) {
-				return $this->load->view($this->config->get('config_template') . '/template/module/topsale.tpl', $data);
+			if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/module/newgoods.tpl')) {
+				return $this->load->view($this->config->get('config_template') . '/template/module/newgoods.tpl', $data);
 			} else {
-			return $this->load->view('default/template/module/topsale.tpl', $data);
+			return $this->load->view('default/template/module/newgoods.tpl', $data);
 		   }
 	    }
 	}

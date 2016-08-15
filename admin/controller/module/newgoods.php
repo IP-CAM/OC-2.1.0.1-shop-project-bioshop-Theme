@@ -1,9 +1,9 @@
 <?php
-class ControllerModuleTopsale extends Controller {
+class ControllerModuleNewgoods extends Controller {
 	private $error = array(); 
 	
 public function index() {
-		$this->load->language('module/topsale');
+		$this->load->language('module/newgoods');
 
 		$this->document->setTitle($this->language->get('heading_title'));
 
@@ -11,7 +11,7 @@ public function index() {
 
 		if (($this->request->server['REQUEST_METHOD'] == 'POST') && $this->validate()) {
 			if (!isset($this->request->get['module_id'])) {
-				$this->model_extension_module->addModule('topsale', $this->request->post);
+				$this->model_extension_module->addModule('newgoods', $this->request->post);
 			} else {
 				$this->model_extension_module->editModule($this->request->get['module_id'], $this->request->post);
 			}
@@ -64,19 +64,19 @@ public function index() {
 		if (!isset($this->request->get['module_id'])) {
 			$data['breadcrumbs'][] = array(
 				'text' => $this->language->get('heading_title'),
-				'href' => $this->url->link('module/topsale', 'token=' . $this->session->data['token'], 'SSL')
+				'href' => $this->url->link('module/newgoods', 'token=' . $this->session->data['token'], 'SSL')
 			);
 		} else {
 			$data['breadcrumbs'][] = array(
 				'text' => $this->language->get('heading_title'),
-				'href' => $this->url->link('module/topsale', 'token=' . $this->session->data['token'] . '&module_id=' . $this->request->get['module_id'], 'SSL')
+				'href' => $this->url->link('module/newgoods', 'token=' . $this->session->data['token'] . '&module_id=' . $this->request->get['module_id'], 'SSL')
 			);			
 		}
 
 		if (!isset($this->request->get['module_id'])) {
-			$data['action'] = $this->url->link('module/topsale', 'token=' . $this->session->data['token'], 'SSL');
+			$data['action'] = $this->url->link('module/newgoods', 'token=' . $this->session->data['token'], 'SSL');
 		} else {
-			$data['action'] = $this->url->link('module/topsale', 'token=' . $this->session->data['token'] . '&module_id=' . $this->request->get['module_id'], 'SSL');
+			$data['action'] = $this->url->link('module/newgoods', 'token=' . $this->session->data['token'] . '&module_id=' . $this->request->get['module_id'], 'SSL');
 		}
 		
 		$data['cancel'] = $this->url->link('extension/module', 'token=' . $this->session->data['token'], 'SSL');
@@ -113,11 +113,11 @@ public function index() {
 		$data['column_left'] = $this->load->controller('common/column_left');
 		$data['footer'] = $this->load->controller('common/footer');
 
-		$this->response->setOutput($this->load->view('module/topsale.tpl', $data));
+		$this->response->setOutput($this->load->view('module/newgoods.tpl', $data));
 	}
 	
 	protected function validate() {
-		if (!$this->user->hasPermission('modify', 'module/topsale')) {
+		if (!$this->user->hasPermission('modify', 'module/newgoods')) {
 			$this->error['warning'] = $this->language->get('error_permission');
 		}
 		
