@@ -1,22 +1,22 @@
 <?php
 // HTTP
-define('HTTP_SERVER', 'http://opencart_new/');
+define('HTTP_SERVER', 'http://opencart.shop/');
 
 // HTTPS
-define('HTTPS_SERVER', 'http://opencart_new/');
+define('HTTPS_SERVER', 'http://opencart.shop/');
 
 // DIR
-define('DIR_APPLICATION', 'C:/Apache/opencart_new/www/catalog/');
-define('DIR_SYSTEM', 'C:/Apache/opencart_new/www/system/');
-define('DIR_LANGUAGE', 'C:/Apache/opencart_new/www/catalog/language/');
-define('DIR_TEMPLATE', 'C:/Apache/opencart_new/www/catalog/view/theme/');
-define('DIR_CONFIG', 'C:/Apache/opencart_new/www/system/config/');
-define('DIR_IMAGE', 'C:/Apache/opencart_new/www/image/');
-define('DIR_CACHE', 'C:/Apache/opencart_new/www/system/storage/cache/');
-define('DIR_DOWNLOAD', 'C:/Apache/opencart_new/www/system/storage/download/');
-define('DIR_LOGS', 'C:/Apache/opencart_new/www/system/storage/logs/');
-define('DIR_MODIFICATION', 'C:/Apache/opencart_new/www/system/storage/modification/');
-define('DIR_UPLOAD', 'C:/Apache/opencart_new/www/system/storage/upload/');
+define('DIR_APPLICATION', 'C:/Apache/opencart.shop/www/catalog/');
+define('DIR_SYSTEM', 'C:/Apache/opencart.shop/www/system/');
+define('DIR_LANGUAGE', 'C:/Apache/opencart.shop/www/catalog/language/');
+define('DIR_TEMPLATE', 'C:/Apache/opencart.shop/www/catalog/view/theme/');
+define('DIR_CONFIG', 'C:/Apache/opencart.shop/www/system/config/');
+define('DIR_IMAGE', 'C:/Apache/opencart.shop/www/image/');
+define('DIR_CACHE', 'C:/Apache/opencart.shop/www/system/storage/cache/');
+define('DIR_DOWNLOAD', 'C:/Apache/opencart.shop/www/system/storage/download/');
+define('DIR_LOGS', 'C:/Apache/opencart.shop/www/system/storage/logs/');
+define('DIR_MODIFICATION', 'C:/Apache/opencart.shop/www/system/storage/modification/');
+define('DIR_UPLOAD', 'C:/Apache/opencart.shop/www/system/storage/upload/');
 
 // DB
 define('DB_DRIVER', 'mysqli');
