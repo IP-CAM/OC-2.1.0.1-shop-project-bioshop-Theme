@@ -1326,3 +1326,65 @@ main .container {
 .subscribe a:nth-of-type(2):hover {
   text-decoration: none;
 }
+
+.search-button {
+	width: 16px !important;
+	height: 16px !important;
+	right: -149px !important;
+	top: 7px !important;
+}
+
+.btn-basket {
+	width: 51px !important;
+	height: 48px !important;
+	background: url(../image/basket_bg.png) no-repeat !important;
+}
+
+.btn-group.btn-block.open {
+	box-shadow: none !important;
+	border: none !important;
+	outline: none !important;
+}
+
+#cart.open > .btn {
+	border: none;
+}
+
+#cart > .btn {
+	color: #4b5b67 !important;
+	font-size: 13px !important;
+	font-weight: 700 !important;
+	line-height: 68px !important;
+	letter-spacing: -0.1px !important;
+	position: absolute;
+	left: 103px;
+	top: -7px;
+}
+
+#cart > .btn > span {
+	position: absolute;
+	top: -8px;
+	left: -126px;
+}
+
+.dropdown-menu.pull-right {
+	text-align: center;
+	color: black;
+	position: absolute;
+	right: -155px;
+	top: 52px;
+}
+
+#cart .dropdown-menu {
+	padding: 10px;
+	text-align: center;
+}
+
+#cart .dropdown-menu li {
+	padding: 0;
+	color: #4b5b67;
+}
+
+.btn-inverse {
+	text-shadow:none !important;
+}
