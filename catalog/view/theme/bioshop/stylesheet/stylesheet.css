@@ -1388,3 +1388,231 @@ main .container {
 .btn-inverse {
 	text-shadow:none !important;
 }
+
+//*For filters page*//
+
+.container-for-filters {
+  margin-bottom: 106px;
+}
+.filters-menu {
+  margin-top: -22px;
+}
+.filters-menu p {
+  height: 46px;
+  width: 367px;
+  background: #a7b7d9;
+  border-radius: 0 20px 0 0;
+  font-size: 14px;
+  font-weight: bold;
+  color: #f6f6f8;
+  padding: 12px 40px;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+p.toogle-p {
+  border-radius: 0;
+  height: 66px;
+  padding: 21px 39px;
+  background: #3d7dca url(../image/arrow-top.png) no-repeat 319px 26px;
+  border-bottom: 1px solid #fff;
+}
+p.arrow-bottom {
+  background: #3d7dca url(../image/arrow-bottom.png) no-repeat 319px 26px;
+}
+.content-filter,
+.content-filter-1,
+.content-filter-2,
+.content-filter-3,
+.content-filter-4,
+.content-filter-5,
+.content-filter-6,
+.content-filter-7 {
+  width: 367px;
+  padding-top: 31px;
+  padding-left: 39px;
+  padding-bottom: 35px;
+  background: #dbe2ea;
+}
+.content-filter ul,
+.content-filter-1 ul,
+.content-filter-2 ul,
+.content-filter-3 ul,
+.content-filter-4 ul,
+.content-filter-5 ul,
+.content-filter-6 ul,
+.content-filter-7 ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.content-filter ul li,
+.content-filter-1 ul li,
+.content-filter-2 ul li,
+.content-filter-3 ul li,
+.content-filter-4 ul li,
+.content-filter-5 ul li,
+.content-filter-6 ul li,
+.content-filter-7 ul li {
+  width: 226px;
+  position: relative;
+  margin-bottom: 20px;
+}
+.content-filter ul li:last-child,
+.content-filter-1 ul li:last-child,
+.content-filter-2 ul li:last-child,
+.content-filter-3 ul li:last-child,
+.content-filter-4 ul li:last-child,
+.content-filter-5 ul li:last-child,
+.content-filter-6 ul li:last-child,
+.content-filter-7 ul li:last-child {
+  margin-bottom: 0px;
+}
+.content-filter ul li label,
+.content-filter-1 ul li label,
+.content-filter-2 ul li label,
+.content-filter-3 ul li label,
+.content-filter-4 ul li label,
+.content-filter-5 ul li label,
+.content-filter-6 ul li label,
+.content-filter-7 ul li label {
+  color: #898c8d;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+.content-filter ul li label span,
+.content-filter-1 ul li label span,
+.content-filter-2 ul li label span,
+.content-filter-3 ul li label span,
+.content-filter-4 ul li label span,
+.content-filter-5 ul li label span,
+.content-filter-6 ul li label span,
+.content-filter-7 ul li label span {
+  display: block;
+  position: absolute;
+  right: 2px;
+  top: 2px;
+  width: 20px;
+  height: 20px;
+  background: url(../images/check_off.png) no-repeat;
+}
+.content-filter ul li input[type="checkbox"]:checked + label span,
+.content-filter-1 ul li input[type="checkbox"]:checked + label span,
+.content-filter-2 ul li input[type="checkbox"]:checked + label span,
+.content-filter-3 ul li input[type="checkbox"]:checked + label span,
+.content-filter-4 ul li input[type="checkbox"]:checked + label span,
+.content-filter-5 ul li input[type="checkbox"]:checked + label span,
+.content-filter-6 ul li input[type="checkbox"]:checked + label span,
+.content-filter-7 ul li input[type="checkbox"]:checked + label span {
+  background: url(../images/check_on.png) no-repeat;
+}
+.content-filter ul li input[type="checkbox"]:checked + label,
+.content-filter-1 ul li input[type="checkbox"]:checked + label,
+.content-filter-2 ul li input[type="checkbox"]:checked + label,
+.content-filter-3 ul li input[type="checkbox"]:checked + label,
+.content-filter-4 ul li input[type="checkbox"]:checked + label,
+.content-filter-5 ul li input[type="checkbox"]:checked + label,
+.content-filter-6 ul li input[type="checkbox"]:checked + label,
+.content-filter-7 ul li input[type="checkbox"]:checked + label {
+  font-weight: bold;
+  color: #385dae;
+  font-size: 14px;
+}
+.content-filter-2,
+.content-filter-3,
+.content-filter-4,
+.content-filter-5,
+.content-filter-6,
+.content-filter-7 {
+  display: none;
+}
+.bottom-part {
+  width: 367px;
+  height: 66px;
+  background: #a7b7d9;
+  border-radius: 0 0 20px 0;
+}
+.filter-items {
+  padding-left: 31px;
+  padding-top: 20px;
+  padding-right: 54px;
+}
+.filter-items .item-container {
+  height: 248px;
+  position: relative;
+  margin-bottom: 38px;
+}
+.filter-items .item-container a {
+  text-align: center;
+  display: block;
+  width: 165px;
+  height: 42px;
+  background: #f21717;
+  color: #f5f5f5;
+  font-size: 14px;
+  font-weight: bold;
+  padding-top: 10px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  text-decoration: none;
+}
+.filter-items .item-container a:hover {
+  text-decoration: none;
+}
+.filter-items .item-content {
+  width: 366px;
+  height: 203px;
+  position: relative;
+  background-image: -webkit-linear-gradient(124deg, rgba(67, 67, 67, 0.07) 0%, rgba(105, 105, 105, 0.07) 30%, rgba(114, 114, 114, 0.07) 57%, rgba(153, 153, 153, 0.07) 100%);
+  background-image: -o-linear-gradient(124deg, rgba(67, 67, 67, 0.07) 0%, rgba(105, 105, 105, 0.07) 30%, rgba(114, 114, 114, 0.07) 57%, rgba(153, 153, 153, 0.07) 100%);
+  background-image: linear-gradient(214deg, rgba(67, 67, 67, 0.07) 0%, rgba(105, 105, 105, 0.07) 30%, rgba(114, 114, 114, 0.07) 57%, rgba(153, 153, 153, 0.07) 100%);
+  box-shadow: inset 1.9px -2.3px 8px rgba(174, 174, 174, 0.28);
+}
+.filter-items .content-image {
+  width: 170px;
+  padding: 35px 60px;
+  display: inline-block;
+}
+.filter-items .content-discription {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 196px;
+  padding-top: 30px;
+}
+.filter-items .content-discription p {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.filter-items .content-discription p.discr {
+  color: #70766f;
+  font-size: 12px;
+  font-weight: normal;
+  margin-bottom: 28px;
+}
+.filter-items .content-discription .prise {
+  padding-left: 48px;
+}
+.filter-items .content-discription .prise-1 {
+  font-size: 12px;
+  color: #70766f;
+  text-decoration: line-through;
+  display: inline-block;
+  margin-right: 36px;
+}
+.filter-items .content-discription .prise-2 {
+  color: #f21717;
+  font-size: 12px;
+  font-weight: bold;
+}
+.filter-items .left-side-items {
+  padding-left: 16px;
+  padding-right: 22px;
+}
+.filter-items .right-side-items {
+  padding-left: 19px;
+}
