@@ -35,7 +35,6 @@ class ControllerModuleFilter extends Controller {
 			}
 
 			$data['action'] = str_replace('&amp;', '&', $this->url->link('product/category', 'path=' . $this->request->get['path'] . $url));
-                        $this->document->addScript('catalog/view/javascript/customer-filter.js');
 			
                         if (isset($this->request->get['filter'])) {
 				$data['filter_category'] = explode(',', $this->request->get['filter']);

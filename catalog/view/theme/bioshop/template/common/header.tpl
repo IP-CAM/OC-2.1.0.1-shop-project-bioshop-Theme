@@ -134,5 +134,5 @@
 			</div>
                        <?php } ?> 
                       </header>
-                      <div class="container break-stripe"></div>
+                      <!--<div class="container break-stripe"></div>-->
                 

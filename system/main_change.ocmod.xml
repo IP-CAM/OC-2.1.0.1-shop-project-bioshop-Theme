@@ -120,4 +120,14 @@ public function __construct($route, $args = array()) {
        </add>
     </operation>
   </file>
+  <file path="catalog/controller/module/filter.php">
+      <operation>
+	 <search>
+             <![CDATA[$data['action'] = str_replace('&amp;', '&', $this->url->link('product/category', 'path=' . $this->request->get['path'] . $url));]]>
+         </search>
+         <add position ="after">
+             <![CDATA[$this->document->addScript('catalog/view/javascript/customer-filter.js');]]>
+         </add>  
+      </operation>
+  </file>      
 </modification>

@@ -1,4 +1,4 @@
-<div class="container container-for-filters">
+<div class="panel panel-default">
 	<div class="col-lg-4 filters-menu">
             <p><?php echo $heading_title; ?></p>
             <?php foreach ($filter_groups as $filter_group) { ?>
@@ -25,9 +25,8 @@
           <?php } ?>
           </div>
      <?php } ?> 
-        <div class="bottom-part"></div>
-	</div>   
-    
+     <div class="bottom-part"></div>
+  </div>   
 </div>
 <script type ="text/javascript">
    
